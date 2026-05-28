@@ -1,0 +1,9 @@
+Reflection (Lab 2)
+
+This lab showed me how an Intent acts as the bridge between two activities:
+MainActivity builds an explicit Intent for SecondActivity and attaches data with
+putExtra, while SecondActivity reads it back with intent.getStringExtra. Adding
+the EditText made the navigation feel real, since the second screen now shows
+whatever the user actually types instead of a fixed string. The trickiest part
+was remembering to register SecondActivity in AndroidManifest.xml, because the
+app compiles fine without it but crashes the moment you try to open the screen.

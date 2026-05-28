@@ -29,6 +29,23 @@
         android:id="@+id/btnColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make It Blue" />
+        android:text="Make It Blue"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Lab 2 challenge 1: user types a message to send to SecondActivity -->
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a message to send"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Lab 2: opens SecondActivity, passing the message via an Intent -->
+    <Button
+        android:id="@+id/btnOpenSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Second Screen" />
 
 </LinearLayout>
