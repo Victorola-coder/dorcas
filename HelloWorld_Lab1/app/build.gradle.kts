@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.dorcas.helloworld"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.dorcas.helloworld"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }
@@ -38,4 +38,14 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+}
+
+configurations.all {
+    resolutionStrategy {
+        // Pin the transitively-pulled coroutines to a version present locally so
+        // Gradle sync resolves on this machine (Maven Central is unreachable here).
+        force("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+        force("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+        force("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3")
+    }
 }
