@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dorcas.helloworld"
+    namespace = "com.dorcas.studentprofile"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.dorcas.helloworld"
+        applicationId = "com.dorcas.studentprofile"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -38,6 +38,7 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.material)
 }
 
 configurations.all {

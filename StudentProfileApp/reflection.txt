@@ -1,0 +1,10 @@
+Reflection (Lab 3)
+
+Building the Student Profile app showed me how one screen can collect several
+kinds of input - text fields, and a RadioGroup for a single choice - and bundle
+them all into a single Intent using multiple putExtra calls. Adding validation
+made me think about the user's mistakes before they happen, so the app now
+refuses to move forward until every field is filled and a gender is chosen.
+Wrapping the fields in Material TextInputLayouts and showing the result inside a
+MaterialCardView also taught me how much cleaner an app feels with proper
+Material Design components instead of plain views.
