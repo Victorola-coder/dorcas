@@ -1,9 +1,0 @@
-Reflection
-
-Building my first Android app showed me how the XML layout and the Kotlin code
-work as two separate halves: the layout defines what the user sees, while the
-code in MainActivity wires up the behaviour. The hardest part was getting
-findViewById and the view ids to line up, since a small mismatch stops the app
-from responding to the button. The most satisfying moment was tapping the button
-and watching the on-screen text and colour change instantly, which made the
-connection between the listener and the UI finally click.
